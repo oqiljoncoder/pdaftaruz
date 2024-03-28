@@ -1,0 +1,95 @@
+.faqs {
+  margin-bottom: 127px;
+  .title-block {
+    #faqs-title {
+      margin: 18px auto 15px;
+    }
+  }
+}
+.accordion {
+  width: 719px;
+  margin: 0 auto;
+  margin-top: 92px;
+  .accordion-item {
+    padding-bottom: 38px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #949494;
+      margin-bottom: 32px;
+    }
+    .accordion-title--box {
+      @include flex;
+      justify-content: space-between;
+      cursor: pointer;
+      .accordion-title {
+        font-family: "GRIFTER";
+        font-size: 20px;
+        font-weight: bold;
+        color: $black;
+      }
+    }
+    .accordion-arrow {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+    }
+    .accordion-description {
+      @include transition;
+      max-height: 0;
+      // height: 0;
+      overflow: hidden;
+      font-size: 16px;
+      font-weight: normal;
+      color: $grey;
+    }
+    &.active {
+      .accordion-description{
+        max-height:max-content;
+        // height: auto;
+        margin-top: 28px;
+      }
+      .accordion-arrow {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .faqs {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 814px) {
+  .accordion {
+    width: 100%;
+  }
+  // .accordion .accordion-item .accordion-description {
+  //   transition: unset;
+  //   -webkit-transition: unset;
+  //   -moz-transition: unset;
+  //   -ms-transition: unset;
+  //   -o-transition: unset;
+  // }
+}
+@media (max-width: 650px) {
+  .accordion .accordion-item .accordion-title--box .accordion-title {
+    font-size: 19px;
+  }
+  .accordion .accordion-item .accordion-description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 363px) {
+  .accordion .accordion-item .accordion-title--box .accordion-title {
+    font-size: 16px;
+  }
+  .accordion .accordion-item .accordion-description {
+    font-size: 14px;
+  }
+}

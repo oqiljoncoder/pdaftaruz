@@ -1,0 +1,280 @@
+.one-solution {
+  margin-bottom: 110px;
+  .one-solution--box {
+    width: 100%;
+    @include flex;
+    justify-content: space-between;
+    padding: 55px 55px 0 52px;
+    background: #563acc url("../../img/lines.svg") left no-repeat;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+  }
+  .one-solution--left-block {
+    .one-solution--title {
+      width: 516px;
+      font-family: "GRIFTER";
+      font-size: 40px;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+  .one-solution--items {
+    @include flex;
+    justify-content: flex-start;
+    margin-top: 27px;
+    .application--upload-type {
+      @include flex;
+      background-color: #000;
+      border: 1px solid #a6a6a6;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      width: 163px;
+      height: 49px;
+      padding: 7px 10px;
+      position: relative;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+      .upload-type--info {
+        margin-left: 10px;
+        h6,
+        h5 {
+          color: #fff;
+          font-size: 10px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+      }
+      .badge {
+        position: absolute;
+        color: #000;
+        background-color: #eee;
+        font-family: "Nexa";
+        padding: 5px 10px;
+        border-radius: 12px;
+        top: -15px;
+        right: -23px;
+        font-size: 10px;
+        cursor: default;
+        box-shadow: 0px 0px 5px #ddd;
+        transform: rotate(15deg);
+      }
+    }
+  }
+  .one-solution--right-block {
+    position: relative;
+    .message-notification {
+      position: absolute;
+      top: 85px;
+      right: 315px;
+    }
+  }
+}
+@media (max-width: 1166px) {
+  .one-solution .one-solution--right-block .message-notification {
+    right: unset;
+    top: -33px;
+    left: -50px;
+    width: 36%;
+  }
+}
+@media (max-width: 1016px) {
+  .one-solution .one-solution--box {
+    padding: 55px 40px 0 40px;
+  }
+}
+@media (max-width: 986px) {
+  .one-solution .one-solution--box {
+    flex-direction: column;
+  }
+  .one-solution--left-block {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .one-solution .one-solution--items {
+    justify-content: center;
+  }
+}
+@media (max-width: 798px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    width: 100%;
+  }
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 38px;
+  }
+  .one-solution .one-solution--right-block .message-notification {
+    top: -24px;
+  }
+}
+@media (max-width: 625px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 598px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 520px) {
+  .one-solution .one-solution--box {
+    padding: 70px 40px 0 40px;
+    background-position: center;
+    background-repeat: repeat;
+  }
+}
+@media (max-width: 490px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 480px) {
+  .one-solution .one-solution--right-block .message-notification {
+    top: -10px;
+    left: -39px;
+    width: 30%;
+  }
+}
+@media (max-width: 445px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 32px;
+  }
+  .one-solution .one-solution--right-block {
+    width: 90%;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 435px) {
+  .one-solution .one-solution--box {
+    padding: 60px 20px 0 20px;
+  }
+  .one-solution .one-solution--items {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .one-solution .one-solution--items .application--upload-type {
+    width: 47%;
+    img {
+      width: 18%;
+    }
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type:not(:last-child) {
+    margin-right: 0;
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h6,
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h5 {
+    font-size: 8px;
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h5 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 421px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 30px;
+  }
+  .one-solution .one-solution--items .application--upload-type {
+    height: auto;
+  }
+}
+@media (max-width: 376px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 28px;
+  }
+  .one-solution .one-solution--items .application--upload-type img {
+    width: 17%;
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h5 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 359px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 26px;
+  }
+  .one-solution .one-solution--items .application--upload-type img {
+    width: 16%;
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h6,
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h5 {
+    font-size: 7px;
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h5 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 343px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 24px;
+  }
+  .one-solution .one-solution--items .application--upload-type {
+    width: 49%;
+  }
+}
+@media (max-width: 333px) {
+  .one-solution .one-solution--left-block .one-solution--title {
+    font-size: 22px;
+  }
+  .one-solution .one-solution--items .application--upload-type img {
+    width: 15%;
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h6,
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h5 {
+    font-size: 6px;
+  }
+  .one-solution
+    .one-solution--items
+    .application--upload-type
+    .upload-type--info
+    h5 {
+    font-size: 11px;
+  }
+}

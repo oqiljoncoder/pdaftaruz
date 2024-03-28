@@ -1,0 +1,230 @@
+.exchange-rate {
+  margin-bottom: 126px;
+  .tab-content {
+    flex-direction: row-reverse;
+    margin-top: 90px;
+    .vs-line {
+      .vs-line--item {
+        width: 230px;
+      }
+    }
+    .tab-content--item {
+      @include flex;
+      &:not(:last-child) {
+        margin-bottom: 57px;
+      }
+
+      align-items: flex-start;
+      .currency {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #eae7ff;
+        @include flex;
+        margin-right: 24px;
+      }
+      .currency-info {
+        h6 {
+          font-family: "GRIFTER";
+          font-size: 20px;
+          font-weight: bold;
+          color: $black;
+          margin-bottom: 12px;
+        }
+        p {
+          margin-left: 0;
+          font-size: 16px;
+          font-weight: normal;
+          color: $grey;
+        }
+      }
+      &.active {
+        .currency {
+          background-color: #563acc;
+          svg {
+            path {
+              fill: #fff;
+            }
+            #other-icon {
+              fill: unset;
+              stroke: #fff;
+            }
+          }
+        }
+      }
+    }
+    .tab-content--element {
+      background-color: #f1ddff;
+
+      .tab-content--element-box {
+        .tab-element--img-box {
+          position: relative;
+        }
+        .original-img {
+          position: relative;
+          z-index: 1;
+        }
+        .coin {
+          position: absolute;
+          left: 54px;
+          bottom: -40px;
+          z-index: 0;
+        }
+        .money {
+          position: absolute;
+          right: -58px;
+          top: 28px;
+          z-index: 1;
+        }
+      }
+    }
+    .vs-line {
+      left: 470px;
+      top: 227px;
+    }
+  }
+  #er-tab-parent {
+    &::after,
+    &::before {
+      background-image: unset;
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+@media (max-width: 1232px) {
+  .exchange-rate #exchange-rate--content .vs-line {
+    left: 75%;
+  }
+}
+@media (max-width: 1232px) {
+  .exchange-rate #exchange-rate--content .vs-line {
+    left: 72%;
+  }
+}
+@media (max-width: 1170px) {
+  .exchange-rate #exchange-rate--content .vs-line {
+    left: 68%;
+  }
+}
+@media (max-width: 1122px) {
+  .exchange-rate {
+    margin-bottom: 30px;
+  }
+  .exchange-rate .tab-content .tab-content--element {
+    margin-bottom: 80px;
+  }
+  .exchange-rate .tab-content {
+    flex-direction: column-reverse;
+  }
+  .exchange-rate
+    .tab-content
+    .tab-content--element
+    .tab-content--element-box
+    .coin {
+    left: 1%;
+  }
+  .exchange-rate
+    .tab-content
+    .tab-content--element
+    .tab-content--element-box
+    .money {
+    right: 4%;
+  }
+  .exchange-rate #exchange-rate--content .vs-line {
+    left: 0;
+    top: unset;
+    bottom: -62px;
+  }
+  .exchange-rate .tab-content .vs-line .vs-line--item {
+    width: 45%;
+  }
+}
+@media (max-width: 992px) {
+  .exchange-rate .tab-content {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 628px) {
+  .exchange-rate .tab-content {
+    margin-top: 30px;
+  }
+  .tab-content .tab-content--items .tab-content--item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .exchange-rate .tab-content .tab-content--item .currency-info h6 {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 558px) {
+  .exchange-rate
+    .tab-content
+    .tab-content--element
+    .tab-content--element-box
+    .original-img {
+    width: 80%;
+  }
+  .exchange-rate
+    .tab-content
+    .tab-content--element
+    .tab-content--element-box
+    .coin {
+    left: 0px;
+    bottom: -37px;
+    width: 24%;
+  }
+  .exchange-rate
+    .tab-content
+    .tab-content--element
+    .tab-content--element-box
+    .money {
+    right: 6px;
+    width: 25%;
+  }
+}
+@media (max-width: 478px) {
+  .exchange-rate
+    .tab-content
+    .tab-content--element
+    .tab-content--element-box
+    .coin {
+    left: 0px;
+    bottom: -17px;
+    width: 24%;
+  }
+  .exchange-rate
+    .tab-content
+    .tab-content--element
+    .tab-content--element-box
+    .money {
+    right: 6px;
+    width: 25%;
+  }
+  .exchange-rate .tab-content .tab-content--item .currency-info h6 {
+    font-size: 18px;
+  }
+  .exchange-rate .tab-content .tab-content--item .currency-info p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .exchange-rate .tab-content .tab-content--item .currency {
+    margin-right: 18px;
+  }
+}
+@media (max-width: 336px) {
+  .exchange-rate .tab-content .tab-content--item .currency {
+    margin-right: 18px;
+  }
+  .exchange-rate .tab-content .tab-content--item .currency-info h6 {
+    font-size: 17px;
+  }
+  .exchange-rate .tab-content .tab-content--item .currency-info p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,434 @@
+.dashboard-section {
+  width: 100%;
+  position: relative;
+  padding: 194px 62px;
+  margin-bottom: 290px;
+  background-color: #f8e7df;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  .dashboard-section--info {
+    width: 500px;
+    h3 {
+      font-family: "Nexa";
+      font-weight: normal;
+      font-size: 42px;
+      margin-bottom: 24px;
+      // word-break: break-all;
+    }
+    p {
+      font-family: "Nexa";
+      font-weight: normal;
+      font-size: 18px;
+    }
+    .btn-group {
+      margin-top: 60px;
+      @include flex;
+      justify-content: flex-start;
+      .btn-item {
+        @include flex;
+        height: 67px;
+        border-color: #1d191f;
+        @include transition;
+        cursor: pointer;
+        &:nth-child(1) {
+          width: 222px;
+          border-radius: 32px;
+          -webkit-border-radius: 32px;
+          -moz-border-radius: 32px;
+          -ms-border-radius: 32px;
+          -o-border-radius: 32px;
+          margin-right: 20px;
+        }
+        &:nth-child(2) {
+          width: 200px;
+          border-radius: 40px;
+          -webkit-border-radius: 40px;
+          -moz-border-radius: 40px;
+          -ms-border-radius: 40px;
+          -o-border-radius: 40px;
+        }
+        p {
+          font-family: "Nexa";
+          font-weight: normal;
+          font-size: 18px;
+          margin-left: 11px;
+          color: #1d191f;
+        }
+        &:hover {
+          background-color: #1d191f;
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.dashboard-section--box {
+  position: absolute;
+  top: -77px;
+}
+.phone-dashboard-img768,
+.phone-dashboard-img576 {
+  display: none;
+}
+
+// Responsive
+@media (max-width: 1224px) {
+  .dashboard-section {
+    width: 100%;
+    position: unset;
+    margin-bottom: 200px;
+    padding: 120px 62px;
+  }
+  .dashboard-section .dashboard-section--info {
+    width: 100%;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .dashboard-section .dashboard-section--info .btn-group {
+    justify-content: center;
+  }
+  .dashboard-section .dashboard-section--info .btn-group .btn-item:nth-child(1),
+  .dashboard-section
+    .dashboard-section--info
+    .btn-group
+    .btn-item:nth-child(2) {
+    width: 23%;
+  }
+  .dashboard-section--box {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 26%;
+    width: 100%;
+    position: unset;
+    right: unset;
+  }
+}
+@media (max-width: 1054px) {
+  .dashboard-section .dashboard-section--info .btn-group .btn-item:nth-child(1),
+  .dashboard-section
+    .dashboard-section--info
+    .btn-group
+    .btn-item:nth-child(2) {
+    width: 250px;
+  }
+}
+@media (max-width: 987px) {
+  .dashboard-section--box {
+    padding-right: 17%;
+  }
+}
+@media (max-width: 910px) {
+  .dashboard-section--box {
+    width: 110%;
+    padding-right: 8%;
+  }
+}
+@media (max-width: 800px) {
+  .dashboard .dashboard-title--box h2 {
+    width: 95%;
+  }
+  .dashboard .dashboard-title--box p {
+    width: 90%;
+  }
+}
+@media (max-width: 769px) {
+  .dashboard-section {
+    margin-bottom: 150px;
+  }
+  .phone-dashboard--main {
+    display: none;
+  }
+  .phone-dashboard-img768 {
+    display: block;
+  }
+  .phone-dashboard--box {
+    width: 116%;
+    padding: 26px;
+  }
+  .dashboard .dashboard-title--box h2,
+  .dashboard .dashboard-title--box p {
+    width: 100%;
+  }
+  .dashboard-section--box .phone-dashboard .phone-dashboard--item {
+    left: -237px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h4 {
+    font-size: 14px;
+    padding-bottom: 9px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h2 {
+    font-size: 23px;
+  }
+  .dashboard-section .dashboard-section--info .btn-group .btn-item:nth-child(1),
+  .dashboard-section
+    .dashboard-section--info
+    .btn-group
+    .btn-item:nth-child(2) {
+    width: 230px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h5 {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .phone-dashboard--box .phone-dashboard--btn {
+    width: 60px;
+    height: 32px;
+    font-size: 13px;
+  }
+  .smart-item--element .form-group input:checked + label:after {
+    top: 0;
+    left: 7px;
+    width: 4px;
+    height: 12px;
+  }
+}
+@media (max-width: 577px) {
+  .dashboard-section {
+    margin-bottom: 100px;
+  }
+  .phone-dashboard-img768 {
+    display: none;
+  }
+  .phone-dashboard-img576 {
+    display: block;
+    margin-left: 10px;
+  }
+  .dashboard .dashboard-title--box h6 {
+    font-size: 16px;
+  }
+  .dashboard .dashboard-title--box h2 {
+    font-size: 46px;
+  }
+  .dashboard .dashboard-title--box p {
+    font-size: 15px;
+  }
+  .dashboard-section .dashboard-section--info h3 {
+    font-size: 27px;
+  }
+  .dashboard-section .dashboard-section--info p,
+  .dashboard-section .dashboard-section--info .btn-group .btn-item p {
+    font-size: 16px;
+  }
+  .dashboard-section .dashboard-section--info .btn-group {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .dashboard-section .dashboard-section--info .btn-group .btn-item:nth-child(1),
+  .dashboard-section
+    .dashboard-section--info
+    .btn-group
+    .btn-item:nth-child(2) {
+    width: 220px;
+  }
+  .dashboard-section
+    .dashboard-section--info
+    .btn-group
+    .btn-item:nth-child(1) {
+    margin-right: 0;
+  }
+  .phone-dashboard--box {
+    width: 110%;
+    padding: 24px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h4 {
+    font-size: 11px;
+    padding-bottom: 6px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h2 {
+    font-size: 20px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h5 {
+    font-size: 13px;
+    padding-top: 7px;
+  }
+  .smart-item--element .form-group input:checked + label:after {
+    top: 0;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+  }
+}
+@media (max-width: 512px) {
+  .dashboard-section--box .phone-dashboard .phone-dashboard--item {
+    left: -213px;
+  }
+}
+@media (max-width: 497px) {
+  .dashboard .dashboard-title--box h6 {
+    font-size: 14px;
+  }
+  .dashboard .dashboard-title--box h2 {
+    font-size: 40px;
+  }
+  .dashboard .dashboard-title--box p {
+    font-size: 15px;
+  }
+  // .dashboard-section .dashboard-section--info h3 {
+  //   font-size: 35px;
+  // }
+  .dashboard-section .dashboard-section--info p,
+  .dashboard-section .dashboard-section--info .btn-group .btn-item p {
+    font-size: 14px;
+  }
+  .dashboard-section .dashboard-section--info p,
+  .dashboard-section .dashboard-section--info .btn-group .btn-item p {
+    font-size: 16px;
+  }
+  .dashboard-section .dashboard-section--info .btn-group .btn-item svg {
+    width: 22px;
+  }
+  .dashboard-section .dashboard-section--info .btn-group .btn-item {
+    height: 59px;
+  }
+  .dashboard .dashboard-title--box {
+    margin-bottom: 70px;
+  }
+  .dashboard-section--box {
+    padding-right: 0;
+  }
+  .phone-dashboard--box {
+    width: 112%;
+  }
+  .phone-dashboard--box .phone-dashboard--info h4 {
+    font-size: 10px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h2 {
+    font-size: 18px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h5 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 476px) {
+  .dashboard-section {
+    padding: 90px 39px;
+  }
+}
+@media (max-width: 434px) {
+  // .dashboard-section .dashboard-section--info h3 {
+  //   font-size: 32px;
+  // }
+  .dashboard-section--box .phone-dashboard .phone-dashboard--item {
+    left: -160px;
+  }
+  .phone-dashboard--box {
+    width: 108%;
+  }
+  .phone-dashboard--box .phone-dashboard--info h4 {
+    font-size: 9px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h2 {
+    font-size: 16px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h5 {
+    font-size: 10px;
+  }
+  .phone-dashboard--box .phone-dashboard--btn {
+    width: 50px;
+    height: 26px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 390px) {
+  .dashboard-section .dashboard-section--info p,
+  .dashboard-section .dashboard-section--info .btn-group .btn-item p {
+    font-size: 15px;
+  }
+  .dashboard-section--box .phone-dashboard .phone-dashboard--item {
+    left: -133px;
+  }
+  .phone-dashboard--box {
+    width: 104%;
+    padding: 18px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h4 {
+    font-size: 8px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h2 {
+    font-size: 14px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h5 {
+    font-size: 9px;
+  }
+  .phone-dashboard--box .phone-dashboard--btn {
+    width: 43px;
+    height: 22px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 377px) {
+  .smart-item--element .form-group input:checked + label:after {
+    left: 5px;
+    width: 2px;
+    height: 7px;
+  }
+}
+@media (max-width: 365px) {
+  .dashboard .dashboard-title--box h2 {
+    font-size: 36px;
+  }
+  .dashboard-section .dashboard-section--info h3 {
+    font-size: 30px;
+  }
+  .dashboard-section {
+    padding: 80px 28px;
+  }
+  .dashboard-section--box .phone-dashboard .phone-dashboard--item {
+    left: -102px;
+  }
+  .phone-dashboard--box {
+    width: 104%;
+    padding: 12px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h4 {
+    font-size: 7px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h2 {
+    font-size: 13px;
+  }
+  .phone-dashboard--box .phone-dashboard--info h5 {
+    font-size: 8px;
+  }
+  .phone-dashboard--box .phone-dashboard--btn {
+    width: 35px;
+    height: 19px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 335px) {
+  .dashboard .dashboard-title--box h6 {
+    font-size: 13px;
+  }
+  .dashboard .dashboard-title--box h2 {
+    font-size: 33px;
+  }
+  .dashboard .dashboard-title--box p {
+    font-size: 14px;
+  }
+  .dashboard-section .dashboard-section--info h3 {
+    font-size: 28px;
+  }
+  .dashboard-section .dashboard-section--info p,
+  .dashboard-section .dashboard-section--info .btn-group .btn-item p {
+    font-size: 14px;
+  }
+  .dashboard-section .dashboard-section--info .btn-group .btn-item svg {
+    width: 20px;
+  }
+  .dashboard-section .dashboard-section--info .btn-group .btn-item {
+    height: 50px;
+  }
+  .dashboard-section--box .phone-dashboard .phone-dashboard--item {
+    left: -84px;
+  }
+}
