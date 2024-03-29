@@ -32,10 +32,24 @@ img {
 .container {
   width: 1264px;
   margin: 0 auto;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 
 .specific {
   color: #563acc;
   font-weight: 700;
+}
+
+/* header */
+
+@media screen and (max-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    width: 1264px;
+    margin: 0 auto;
+  }
 }
