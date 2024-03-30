@@ -178,18 +178,6 @@ img {
   line-height: normal;
 }
 
-@media screen and (max-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    width: 1264px;
-    margin: 0 auto;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .tabs__box {
     flex-direction: column;
