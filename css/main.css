@@ -42,6 +42,142 @@ img {
 
 /* header */
 
+/* tabs secition */
+.tabs__container {
+  padding-top: 112px;
+  padding-bottom: 148px;
+}
+
+.tabs__nav {
+  text-align: center;
+  max-width: 622px;
+  margin: 0 auto;
+  margin-bottom: 113px;
+}
+
+.tabs__nav__main__title {
+  background: linear-gradient(180deg, #6364ff 64.58%, #563acc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tabs__nav__title {
+  color: #1a1a1a;
+  font-family: "GRIFTER", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 16px 0 12px 0;
+}
+
+.tabs__nav__descr {
+  color: #3a3a3a;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.tabs .nav {
+  gap: 20px;
+  width: 50%;
+  height: 493px;
+}
+
+.tabs__line {
+  width: 80px;
+  height: 493px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.tabs__line span {
+  height: 100%;
+  width: 2px;
+  background: rgba(148, 148, 148, 0.5);
+  border-radius: 50%;
+}
+
+.tabs__line p {
+  height: 40px;
+  padding-top: 20px;
+}
+
+.nav-pills .nav-link {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  color: #3a3a3a;
+  border: 1px solid transparent;
+  border-radius: 24px;
+}
+
+.tabs .nav-link.active {
+  border-radius: 24px;
+  border: 1px solid rgba(148, 148, 148, 0.5);
+  background: transparent;
+  color: #3a3a3a;
+  transform: scale(1.01);
+}
+
+.tabs .nav-link.active svg path {
+  fill: #198754;
+}
+
+.nav-pills .nav-link svg {
+  margin-right: 12px;
+}
+
+/* tabs content */
+.tabs .tab-content {
+  width: 50%;
+}
+.tabs .tab-pane {
+  border-radius: 24px;
+  background: rgba(234, 231, 255, 0.7);
+  width: 100%;
+  height: 530px;
+  padding: 32px;
+}
+
+.tabs .tab-pane img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.tab-pane__nav {
+  max-width: calc(100% - 64px);
+  text-align: center;
+  margin: 24px auto;
+}
+
+.tab-pane__title {
+  color: #1a1a1a;
+  font-family: "GRIFTER", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.tab-pane__descr {
+  color: #3a3a3a;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media screen and (max-width: 1400px) {
   .container,
   .container-lg,
@@ -51,5 +187,147 @@ img {
   .container-xxl {
     width: 1264px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tabs__box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs .nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs .tab-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tabs .tab-content .tab-pane {
+    width: 80%;
+    height: auto;
+  }
+
+  .tabs .nav {
+    width: 80%;
+    align-items: start;
+  }
+
+  .tabs__line {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+  }
+
+  .tabs__line span {
+    width: 100%;
+    height: 2px;
+    background: rgba(148, 148, 148, 0.5);
+    border-radius: 50%;
+  }
+
+  .tabs__line p {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tab-pane__title {
+    font-size: 25px;
+  }
+
+  .tabs .nav-link svg {
+    min-width: 24px;
+  }
+
+  .tabs__nav__title {
+    font-size: 28px;
+  }
+  
+  .tab-pane__nav {
+    max-width: 100%;
+    margin: 12px 0;
+  } 
+
+  .tabs__nav__main__title {
+    font-size: 12px;
+  }
+
+  .tabs__nav__descr {
+    font-size: 14px;
+  }
+
+  .tabs__nav {
+    margin-bottom: 70px;
+  }
+
+  .tabs__nav__title {
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container, .container-sm {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .tabs .nav {
+    width: 100%;
+  }
+
+  .tabs .nav .nav-link {
+    font-size: 12px;
+  }
+  
+  .tabs .nav-link svg {
+    width: 20px;
+  }
+
+  .tabs .tab-content .tab-pane {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .tabs .tab-pane img {
+    border-radius: 16px;
+  }
+
+  .tab-pane__nav {
+    max-width: 100%;
+    margin: 12px 0;
+  }
+
+  .tabs__nav__title {
+    font-size: 20px;
+  }
+
+  .tabs__nav__main__title {
+    font-size: 10px;
+  }
+
+  .tabs__nav__descr {
+    font-size: 13px;
+  }
+
+  .tabs__nav {
+    margin-bottom: 40px;
+  }
+
+  .tabs__nav__descr {
+    line-height: 20px;
   }
 }
