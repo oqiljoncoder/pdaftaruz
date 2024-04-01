@@ -32,15 +32,12 @@ img {
 .container {
   width: 1264px;
   margin: 0 auto;
-  /* padding: 0 30px; */
 }
 
 .specific {
   color: #563acc;
   font-weight: 700;
 }
-
-/* header */
 
 /* tabs secition */
 .tabs__container {
