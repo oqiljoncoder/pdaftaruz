@@ -327,7 +327,7 @@ img {
   }
   .box-input{
     border-style: none;
-    width: 25rem;
+    width: 20rem;
   }
   .intro__input{
     outline-style: auto;
@@ -335,20 +335,16 @@ img {
     margin: 1rem 0;
   }
   .image-phone{
-    width: 10rem;
+    width: 7rem;
   }
-  .phone__image{
-  }
-  .box-input{
-    width: 24rem;
-  }
+
 }
 @media screen and (max-width: 360px){
   .intro__title{
-    font-size: 20px;
+    font-size: 16px;
   }
   .box-input{
-    width: 15rem;
+    width: 12rem;
   }
   .image-phone{
     width: 6rem;
